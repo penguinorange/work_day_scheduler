@@ -166,20 +166,16 @@
 
 
 
-
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
     <script>
 $( document ).ready(function() {
-  console.log("documentready");
   var currentTime = moment().format("MMM Do YYYY");
   console.log(currentTime);
   document.getElementById("currentDay").innerHTML = currentTime;
 
  var elementArr = document.getElementsByClassName("col-3");
- console.log(elementArr);
       for (var i = 0; i < elementArr.length; i++) {
         var elText = elementArr[i].innerText;
         console.log(elText);
@@ -200,7 +196,6 @@ $( document ).ready(function() {
           $(elementArr[i]).addClass("present")
         }
       }
-  
 
   var appointment = document.getElementsByClassName("col-7")
   console.log(appointment)
@@ -228,13 +223,13 @@ var time18 = document.querySelector("#time17");
 
 
 
-  document.getElementsByClassName("btn").addEventListener("click", function (){
-        var user = document.getElementById("user").value ;
-        //localStorage["user"] = user ;
-        localStorage.setItem("user", user) ;
-        alert("gmail id saved") ;
-        console.log("gmail id saved")
-    } , false);
+  // document.getElementsByClassName("btn").addEventListener("click", function (){
+  //       var user = document.getElementById("user").value ;
+
+  //       localStorage.setItem("user", user) ;
+  //       alert("gmail id saved") ;
+  //       console.log("gmail id saved")
+  //   } , false);
 
 
 
@@ -245,8 +240,6 @@ var time18 = document.querySelector("#time17");
 
   //   localStorage.setItem("count", count);
   // });
-
-
 
 
   console.log("done");
